@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
 
@@ -16,6 +17,7 @@
 <div id="particles-js">
   <div class="heading">
   <h1> <span id="element"></span></h1>
+ <div class="container"> <p id="para"></p></div>
  </div>
 <script>
   var typed6  = new Typed('#element', {
@@ -25,6 +27,14 @@
     // loop: true
   });
 </script>
+<script>
+  setTimeout(function() {
+  var typed6  = new Typed('#para', {
+    strings: ['Happy Birthday, dear best friend! You have always been a part of my happiest moments, as well as my gloomy ones. I am lucky to have a friend of a lifetime with whom I can express my thoughts and share my dreams. On your special day, I hope you will receive the love and care you deserve!'],
+    typeSpeed: 10,
+    // loop: true
+  });}, 3500);
+</script>
 <script src="../particles.js"></script>
 <script src="js/app.js"></script>
 
@@ -33,11 +43,12 @@
 // Wait for 5 seconds
 setTimeout(function() {
   window.location.href = "video.html";
-}, 4500); // 5000 milliseconds = 5 seconds
+}, 15000); // 5000 milliseconds = 5 seconds
 
 
 
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
